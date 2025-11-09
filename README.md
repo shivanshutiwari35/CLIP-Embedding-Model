@@ -1,51 +1,38 @@
-#  CLIP Semantic Difference — Understanding Changes Between Images
+# CLIP Semantic Difference — Understanding Changes Between Images
 
-This project demonstrates how **OpenAI’s CLIP model** can capture the *semantic difference* between two images — not just what they are, but **what changed**.
+This project demonstrates how **OpenAI’s CLIP model** can capture the semantic difference between two images — not just what they are, but what changed.
 
-It shows that when you subtract two image embeddings (e.g., *a man with a cap* − *a man without a cap*), the resulting vector aligns with **text concepts** like “cap” or “hat”.
-
----
-
-##  What’s Inside
-- **CLIP EMBEDDING MODEL.ipynb** → main Python script performing the experiment  
-- **requirements.txt** → minimal dependencies  
-- **README.md** → this file  
+When you subtract two image embeddings (for example, *a man with a cap* − *a man without a cap*), the resulting vector aligns with **text concepts** like “cap” or “hat”.  
+This behavior shows how CLIP learns meaningful visual–semantic relationships.
 
 ---
 
-##  Setup & Run
+## Overview
 
-### 1️ Clone and Install
+CLIP (Contrastive Language–Image Pretraining) learns a shared embedding space for both images and text.  
+This experiment tests whether the *difference* between two image embeddings corresponds to a meaningful text concept representing the visual change between them.
+
+
+## Project Structure
+
+CLIP-Embedding-Model/
+│
+│
+├── CLIP_Embedding_Model.ipynb
+├── requirements.txt
+└── README.md
+
+
+---
+
+## Installation
+
+Clone the repository and install the dependencies:
+
 ```bash
-git clone https://github.com/shivanshutiwari35/CLIP-Embedding-Model.git
-cd CLIP-Embedding-Model
+git clone https://github.com/<your-username>/clip-semantic-difference.git
+cd clip-semantic-difference
 pip install -r requirements.txt
 
-cap        → 0.45
-hat        → 0.39
-helmet     → 0.06
-glasses    → 0.03
 
-##The model identifies “cap” and “hat” as the top matches — proving that the difference between the two image embeddings corresponds to the concept that changed.
 
-##Conceptual Insight
-
--This project explores visual-semantic arithmetic in CLIP’s shared embedding space.
-
--Just like:
-
--King – Man + Woman ≈ Queen
-
--…we now have:
-
--(Man with Cap) – (Man without Cap) ≈ Cap
-
--Referenced in:
-
--ZeroCap: Zero-Shot Image-to-Text Generation for Visual-Semantic Arithmetic (CVPR 2021)
-
--Embedding Arithmetic of Multimodal Queries for Image Retrieval (CVPR 2022)
-
--##Visualization
-
--Run inside Jupyter/Colab to view both images side-by-side and similarity scores plotted.
