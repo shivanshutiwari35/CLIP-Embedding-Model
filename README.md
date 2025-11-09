@@ -7,7 +7,7 @@ It shows that when you subtract two image embeddings (e.g., *a man with a cap* �
 ---
 
 ##  What’s Inside
-- **clip_diff.py** → main Python script performing the experiment  
+- **CLIP EMBEDDING MODEL.ipynb** → main Python script performing the experiment  
 - **requirements.txt** → minimal dependencies  
 - **README.md** → this file  
 
