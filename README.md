@@ -17,6 +17,11 @@ It shows that when you subtract two image embeddings (e.g., *a man with a cap* �
 
 ### 1️ Clone and Install
 ```bash
-git clone https://github.com/<your-username>/clip-semantic-difference.git
-cd clip-semantic-difference
+git clone https://github.com/shivanshutiwari35/CLIP-Embedding-Model.git
+cd CLIP-Embedding-Model
 pip install -r requirements.txt
+
+cap        → 0.45
+hat        → 0.39
+helmet     → 0.06
+glasses    → 0.03
