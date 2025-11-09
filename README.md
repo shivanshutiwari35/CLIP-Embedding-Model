@@ -6,19 +6,10 @@ It shows that when you subtract two image embeddings (e.g., *a man with a cap* �
 
 ---
 
-##  Demo Overview
-
-| Input 1 | Input 2 | Semantic Difference |
-|----------|----------|---------------------|
-| ![Without Cap](assets/without_cap.jpg) | ![With Cap](assets/with_cap.jpg) | ≈ "cap", "hat" |
-
----
-
 ##  What’s Inside
 - **clip_diff.py** → main Python script performing the experiment  
 - **requirements.txt** → minimal dependencies  
 - **README.md** → this file  
-- **assets/** → your images (`man_with_cap.jpg`, `man_without_cap.jpg`)
 
 ---
 
